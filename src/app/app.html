@@ -1,9 +1,14 @@
 <main>
   <h1 class="title">Hello from Angular !</h1>
-
+<nav>
+  <ul>
+   <button ng-click="app.showingLogo= true">show logo</button>
+   <button ng-click="app.showingLogo= false">hide logo</button>
+  </ul>
+</nav>
   <!-- Images (and assets) are parsed and loaded from within the public directory -->
-  <img src="/img/logo.png">
+  <img src="/img/logo.png" ng-show="app.showingLogo">
 </main>
 <footer>
-  <a ng-href="{{app.url}}">Webpack Angular Starter</a>
+
 </footer>
